@@ -48,6 +48,16 @@ body {
 
 /* Hero */
 .hero { padding: 6rem 0 4rem; position: relative; overflow: hidden; }
+.hero .container { position: relative; z-index: 1; }
+.hero-mascot {
+  position: absolute; top: -1.5rem; right: -2.5rem; z-index: 0;
+  width: min(44vw, 460px); aspect-ratio: 1 / 1;
+  background: url('/mascot.webp') center / contain no-repeat;
+  opacity: .42; mix-blend-mode: screen; pointer-events: none;
+  -webkit-mask-image: radial-gradient(closest-side, #000 35%, transparent 76%);
+  mask-image: radial-gradient(closest-side, #000 35%, transparent 76%);
+  filter: saturate(1.15) contrast(1.05);
+}
 .hero::before {
   content: ""; position: absolute; inset: -20% -10% auto -10%; height: 60%;
   background: radial-gradient(60% 60% at 50% 0%, rgba(124,92,255,.25), transparent 70%);
@@ -143,4 +153,5 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .nav-toggle { display: block; }
   .about { grid-template-columns: 1fr; gap: 2rem; }
   .hero-stats { gap: 1.5rem; }
+  .hero-mascot { width: 72vw; top: -2.5rem; right: -3.5rem; opacity: .22; }
 }
