@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GTRTONE ASP — native macOS audio plugin that plays Neural Amp Modeler captures and runs an automated sound processor. Case study." />
+    <meta property="og:title" content="GTRTONE ASP · 2-2-100 Entertainment LLC" />
+    <meta property="og:description" content="Native macOS Audio Unit / CLAP / VST3 / standalone built in Rust with Ollama tone plans." />
+    <meta property="og:type" content="article" />
+    <title>GTRTONE ASP · 2-2-100 Entertainment LLC</title>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"CreativeWork","name":"GTRTONE ASP","creator":{"@type":"Person","name":"Christopher Crawford"},"description":"Native macOS audio plugin playing Neural Amp Modeler captures with an automated sound processor."}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/index.html">2-2-100 <span>Entertainment</span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="nav-links" id="navLinks">
+          <a href="/index.html">Home</a>
+          <a href="/services.html">Services</a>
+          <a href="/work.html">Work</a>
+          <a href="/about.html">About</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/contact.html" class="nav-cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="section">
+        <div class="container" style="max-width:800px">
+          <p class="eyebrow">Case Study · Audio / Rust</p>
+          <h1 style="font-size:clamp(2rem,5vw,3rem);letter-spacing:-0.03em;margin:.25rem 0 1rem">GTRTONE ASP</h1>
+          <p class="section-sub">A native macOS Audio Unit that plays Neural Amp Modeler (.nam) captures, drives them at the level they were trained on, and runs an automated sound processor over the result. It also builds tones that are not any single capture.</p>
+          <div class="hero-actions" style="margin-top:1.5rem">
+            <a class="btn btn-ghost" href="/work.html">← Back to work</a>
+          </div>
+
+          <h2 style="margin-top:2.5rem">What it does</h2>
+          <ul class="certs">
+            <li>Hosts NAM captures and runs them at their trained input level</li>
+            <li>Automated Sound Processor (ASP) shapes the result in real time</li>
+            <li>Tone Forge builds new tones beyond any single capture</li>
+            <li>Ships as Audio Unit, CLAP, VST3, and standalone</li>
+          </ul>
+
+          <h2 style="margin-top:2rem">Architecture</h2>
+          <p class="muted">crates/asp-dsp — host-independent engine (NAM host, ASP, Tone Forge, DSP). crates/gtone-ai — Ollama client + tone-plan schema (no audio, no host). crates/gtone-plugin — Audio Unit / CLAP / VST3 / standalone shell via truce.</p>
+
+          <h2 style="margin-top:2rem">Tech</h2>
+          <div class="chips" style="margin-top:.75rem">
+            <span>Rust</span><span>truce</span><span>NAM</span><span>Ollama</span><span>CLAP</span><span>VST3</span><span>Audio Unit</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container"><p>© 2-2-100 Entertainment LLC. Built with care in Tacoma, WA.</p></div></footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
